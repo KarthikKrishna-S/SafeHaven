@@ -1,0 +1,25 @@
+Backend user roles and its corresponding privileges
+User
+/me -> Details about self [ stats ]
+/login -> Login with phone number
+/otp-verify -> verify page of login
+/see-map -> See the heatmap of the place 
+/report -> To report an activity 
+/report-{id} -> To see status of the report also to provide additional details
+/rewards ->  Amount that is to be rewarded to the user for his contribution
+/redeem-reward -> External site [Not going to develop]
+LEA
+/me -> Details about self [ stats ]
+/login -> Login with phone number
+/otp-verify -> verify page of login
+/see-map -> See the heatmap of the place 
+/report -> To report an activity 
+/report-{id} -> To see status of the report also to provide additional details
+                     -> Change status, Add details
+                      -> Assign a team, send email
+/issue-reward -> To send a reward against a report id
+/reward-allocation -> See rewards allocated and rest for the LEA agency
+Admin
+Will be set up using flask-admin. The page will contain all the reports and activities, will be similar to LEA, but have more abilities like strike off LEA and users, ban phone numbers etc
+Frontend
+A simple, clean and beautiful UI from bootstrap will be used, the frontend page can either be based on reactjs or vanilla JS, the dependency should be kept simple, Integrating playback for video, Image and Audio is something that will need support of big guns
